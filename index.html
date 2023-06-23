@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Bora codar desafio 25 - Player VR</title>
+</head>
+
+<body class="bg-[url('../src/images/background.png')] h-[100vh] flex items-center justify-center">
+    <div class="overlay bg-[radial-gradient(50%_50.00%_at_50%_50.00%,_rgba(0,_0,_0,_0.40)_0%,_rgba(0,_0,_0,_0.60)_100%)] absolute w-full h-full top-0"></div>
+    <div class="flex justify-between items-center gap-x-[50px] z-10 max-[768px]:flex-col max-[768px]:relative max-[768px]:gap-y-trim max-[768px]:px-trim-small">
+        <ul
+            class="flex flex-col gap-y-trim items-center bg-[rgba(255,_255,_255,_0.10)] rounded-[80px] shadow-[0px_8px_4px_0px_rgba(0,_0,_0,_0.05),_0px_1px_1px_0px_rgba(255,_255,_255,_0.30)_inset,_0px_-1px_1px_0px_rgba(255,_255,_255,_0.10)_inset] p-[12px] h-full max-h-[320px] max-[768px]:flex-row max-[768px]:w-full max-[768px]:justify-center max-[768px]:gap-x-gap">
+            <li class="py-gap">
+                <a href=""
+                    class="py-gap relative after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                    <img src="./src/images/play-circle.png" alt="play-circle"
+                        class="p-gap bg-[rgba(255,_255,_255,_0.20)] rounded-[80px]">
+                </a>
+            </li>
+            <li class="py-gap">
+                <a href=""
+                    class="py-gap relative after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                    <img src="./src/images/accessibility.png" alt="accessibility">
+                </a>
+            </li>
+            <li class="py-gap">
+                <a href=""
+                    class="py-gap relative after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                    <img src="./src/images/albums.png" alt="albums">
+                </a>
+            </li>
+            <li class="py-gap">
+                <a href=""
+                    class="py-gap relative after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                    <img src="./src/images/search.png" alt="search">
+                </a>
+            </li>
+        </ul>
+        <div class="flex flex-col gap-y-trim max-[768px]:w-full">
+            <div class="flex gap-x-trim bg-[rgba(255,_255,_255,_0.10)] shadow-[0px_8px_4px_0px_rgba(0,_0,_0,_0.05),_0px_1px_1px_0px_rgba(255,_255,_255,_0.30)_inset,_0px_-1px_1px_0px_rgba(255,_255,_255,_0.10)_inset] rounded-[80px] py-[12px] px-box-spacing w-full max-w-[816px] m-[auto] max-[425px]:flex-col max-[425px]:items-center max-[425px]:gap-y-gap">
+                <div class="flex items-center gap-x-box-spacing max-[768px]:gap-x-gap">
+                    <a href=""
+                        class="py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                        <img src="./src/images/sidebar.png" alt="sidebar">
+                    </a>
+                    <div class="flex items-center gap-x-box-spacing">
+                        <a href=""
+                            class="py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                            <img src="./src/images/arrow-back.png" alt="arrow-back">
+                        </a>
+                        <a href=""
+                            class="py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                            <img src="./src/images/arrow-forward.png" alt="arrow-forward">
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-between px-[12px] rounded-[80px] w-full max-w-[440px] bg-[rgba(0,_0,_0,_0.10)] shadow-[0px_-1px_0px_0px_rgba(255,_255,_255,_0.10)_inset,_0px_1px_0px_0px_rgba(0,_0,_0,_0.20)_inset] max-[768px]:min-h-[40px]">
+                    <img src="./src/images/text.png" alt="text" class="cursor-pointer duration-300 hover:opacity-[.83]">
+                    <div class="flex items-center gap-x-small">
+                        <img src="./src/images/lock-closed.png" alt="lock-closed">
+                        <p class="text-white text-[15px] opacity-[.80]">rocketseat.com</p>
+                    </div>
+                    <img src="./src/images/refresh.png" alt="refresh"
+                        class="cursor-pointer duration-300 hover:opacity-[.83]">
+                </div>
+                <div class="flex items-center gap-x-box-spacing max-[768px]:gap-x-gap">
+                    <a href=""
+                        class="py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                        <img src="./src/images/share.png" alt="share">
+                    </a>
+                    <a href=""
+                        class="py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                        <img src="./src/images/add.png" alt="add">
+                    </a>
+                    <a href=""
+                        class="py-gap relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:rounded-[30px] after:bg-black after:h-[4px] after:w-0 after:duration-500 after:ease-out after:hover:w-full">
+                        <img src="./src/images/copy.png" alt="copy">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="./src/images/screen.png" alt="screen">
+                <div class="flex justify-center gap-x-[16px] mt-[16px]">
+                    <div class="w-[8px] h-[8px] bg-[rgba(255,_255,_255,_0.60)] rounded-[8px]"></div>
+                    <div class="w-[86px] h-[8px] bg-[rgba(255,_255,_255,_0.60)] rounded-[8px]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        <p>
+            Coded by <a href="https://github.com/Isgomes7" title="Isgomes7">ISGOMES7</a> 👻.
+        </p>
+    </div>
+</body>
+
+</html>
